@@ -1,0 +1,22 @@
+Additional assumptions:
+
+    No duplicate keys are allowed in input JSON string.
+    Empty json key-value pairs like '"a": {}' will be replaced with '"a": null' in the output.
+
+To run it, please do a maven package by:
+
+    mvn clean package
+
+Then run it by giving a text file:
+
+    cat test.json | java -jar target/flatjson-1.0-SNAPSHOT-jar-with-dependencies.jar
+
+or directly:
+
+    java -jar target/flatjson-1.0-SNAPSHOT-jar-with-dependencies.jar
+
+To run the tests, please do:
+
+    mvn test
+
+Have fun! :)
